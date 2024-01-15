@@ -6,7 +6,9 @@ export default function MainPage() {
   
     return (
       <div className='mainpage'>
-        moose caboose 
+       <h1 style={{color: 'white'}}>
+        This is a header </h1>
+        moose caboose juice
       </div>
        
     );
