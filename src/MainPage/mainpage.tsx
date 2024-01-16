@@ -6,9 +6,15 @@ export default function MainPage() {
   
     return (
       <div className='mainpage'>
-       <h1 style={{color: 'white'}}>
-        This is a header </h1>
-        moose caboose juice
+       <header>
+          <ul>
+            <li><a href = "#"> Home</a></li>
+            <li><a href = "#"> Create</a></li>
+            <li><a href = "#"> Explore</a></li>
+            <li><a href = "#"> Manage</a></li>
+            <li><a href = "#">Profile</a></li>
+          </ul>
+       </header>
       </div>
        
     );
