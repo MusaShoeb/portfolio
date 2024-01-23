@@ -5,23 +5,3 @@
     padding:20px
     text-align center
 }
-
-header {
-    background-color: aliceblue;
-    padding: 30px
-
-
-}
-
-header li {
-    display: inline;
-    padding-left: 25px;
-    padding-right: 10px;
-    
-}
-
-header li a {
-    color: black;
-    padding: 10px;
-    
-}
