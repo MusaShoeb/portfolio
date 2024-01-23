@@ -5,7 +5,6 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import MainPage from './MainPage/mainpage'
 import HeaderMain from './Header/HeaderMain'
-import Home from './Home/Home';
 
 
 function App() {
@@ -20,6 +19,7 @@ function App() {
         <MainPage>
           
         </MainPage>
+       
         
     </div>
      
