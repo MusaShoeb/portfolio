@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Resume from '../Resume'; 
+import Resume from '../Resume/Resume'; 
 import Projects from '../Projects'; 
 import Contact from '../Contact'; 
 import About from '../About'; 

@@ -5,7 +5,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import MainPage from './MainPage/mainpage'
 import HeaderMain from './Header/HeaderMain'
-import Resume from './Resume'; 
+import Resume from './Resume/Resume'; 
 import Projects from './Projects'; 
 import Contact from './Contact'; 
 import About from './About'; 
@@ -18,15 +18,15 @@ function App() {
   return (
     <div className='app'>
       <Router>
-        <HeaderMain />
-        <MainPage />
-        <Routes>
+      <HeaderMain />
+      <Routes>
           <Route path="/home" element={<Home />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
         </Routes>
+        <MainPage />
       </Router>
     </div>
   );
