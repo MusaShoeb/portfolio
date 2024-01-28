@@ -1,0 +1,19 @@
+nav {
+    background-color: aliceblue;
+    padding: 30px
+
+
+}
+
+nav li {
+    display: inline;
+    padding-left: 25px;
+    padding-right: 10px;
+    
+}
+
+nav li a {
+    color: black;
+    padding: 10px;
+    
+}
