@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { CSSProperties, useState } from "react";
 
 export default function Resume() {
   const [resumestate, setResumeState] = useState(false);
@@ -7,13 +7,16 @@ export default function Resume() {
     setResumeState(!resumestate);
   };
 
-  const divStyle = {
-    height:  "100vh" 
-    
+  const divStyle: CSSProperties = {
+    height: "100%",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "flex-start",
   };
 
   return (
-    <div className='Resume' style={divStyle}>
+    <div className="Resume" style={divStyle}>
       <button type="button" onClick={changeResume}>
         Click me!
       </button>
@@ -21,8 +24,9 @@ export default function Resume() {
       {resumestate && (
         <iframe
           src="/MusaMuiz.pdf"
-          width="400"
-          height="400"
+          title="MuizMusa"
+          width="400px"
+          height="400px"
         />
       )}
     </div>
