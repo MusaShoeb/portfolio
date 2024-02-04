@@ -1,6 +1,7 @@
 import React, { CSSProperties, useState } from "react";
 
 const divStyle: CSSProperties = {
+  marginTop: "117px",
   height: "100%",
   display: "flex",
   flexDirection: "row",

@@ -8,7 +8,7 @@ export default function Resume() {
   };
 
   const divStyle: CSSProperties = {
-    
+    marginTop: "117px",
     height: "100%",
     display: "flex",
     flexDirection: "column",
