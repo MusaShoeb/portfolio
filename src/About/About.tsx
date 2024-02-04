@@ -6,7 +6,7 @@ const divStyle: CSSProperties = {
   display: "flex",
   flexDirection: "row",
   alignItems: "center",
-  justifyContent: "flex-end",
+  justifyContent: "space-around",
 };
 
 const handleClick = ({
@@ -38,34 +38,38 @@ const handleClick = ({
 export default function About() {
   return (
     <div className="About" style={divStyle}>
+      <div>
+        <button
+          type="button"
+          onClick={() =>
+            handleClick({ append: "MusaShoeb", website: "GitHub" })
+          }
+        >
+          GitHub
+        </button>
+        <button
+          type="button"
+          onClick={() =>
+            handleClick({ append: "musa.shoeb", website: "Instagram" })
+          }
+        >
+          Instagram
+        </button>
+        <button
+          type="button"
+          onClick={() =>
+            handleClick({ append: "musa.shoeb", website: "LinkedIn" })
+          }
+        >
+          LinkedIn
+        </button>
+      </div>
       <iframe
         src="/MusaWebsite.JPG"
         title="MuizMusa"
         width="800px"
         height="800px"
       />
-      <button
-        type="button"
-        onClick={() => handleClick({ append: "MusaShoeb", website: "GitHub" })}
-      >
-        GitHub
-      </button>
-      <button
-        type="button"
-        onClick={() =>
-          handleClick({ append: "musa.shoeb", website: "Instagram" })
-        }
-      >
-        Instagram
-      </button>
-      <button
-        type="button"
-        onClick={() =>
-          handleClick({ append: "musa.shoeb", website: "LinkedIn" })
-        }
-      >
-        LinkedIn
-      </button>
     </div>
   );
 }
