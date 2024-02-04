@@ -1,4 +1,4 @@
-import React from "react";
+import React, { CSSProperties, useState } from "react";
 import './mainpage.css'
 
 export default function MainPage() { 

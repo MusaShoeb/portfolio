@@ -8,11 +8,13 @@ import HeaderMain from "./Header/HeaderMain";
 import Resume from "./Resume/Resume";
 import Projects from "./Projects";
 import Contact from "./Contact";
-import About from "./About";
+import About from "./About/About";
 import Home from "./Home";
 
 function App() {
   const [count, setCount] = useState(0);
+
+  
 
   return (
     <div className="app">

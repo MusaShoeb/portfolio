@@ -8,6 +8,7 @@ export default function Resume() {
   };
 
   const divStyle: CSSProperties = {
+    
     height: "100%",
     display: "flex",
     flexDirection: "column",

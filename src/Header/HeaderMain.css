@@ -1,11 +1,16 @@
 nav {
-    background-color: aliceblue;
-    padding: 30px
+    
+    background-color: rgb(200, 130, 224);
+    padding: 30px;
+    width: 100%;
+    box-sizing: border-box;
+
 
 
 }
 
 nav li {
+    
     display: inline;
     padding-left: 25px;
     padding-right: 10px;
@@ -13,6 +18,7 @@ nav li {
 }
 
 nav li a {
+    
     color: black;
     padding: 10px;
     
