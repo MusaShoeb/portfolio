@@ -1,12 +1,16 @@
 import React, { CSSProperties, useState } from "react";
+import './About.css'
+
 
 const divStyle: CSSProperties = {
   marginTop: "117px",
   height: "100%",
   display: "flex",
-  flexDirection: "row",
+  flexDirection: "column",
   alignItems: "center",
   justifyContent: "space-around",
+  padding: "20px",
+  float: 'right'
 };
 
 const handleClick = ({
@@ -35,41 +39,39 @@ const handleClick = ({
   }
 };
 
+
 export default function About() {
   return (
-    <div className="About" style={divStyle}>
-      <div>
-        <button
+    <div className = "AboutContainer" style={divStyle}>
+      <div className="First">
+        <img src={'./MusaProfessionalPhoto.jpeg'} alt="Logo" className = "ProfessionalPhoto"/>
+      </div>
+      <div className="Second">
+      <button className="GitHubButton"
           type="button"
           onClick={() =>
             handleClick({ append: "MusaShoeb", website: "GitHub" })
           }
         >
-          GitHub
+          <img src = {'./GithubLogo.jpg'} alt = "Logo" className = "GithubButtonImage"/>
         </button>
         <button
-          type="button"
+          type="button" className="InstaButton"
           onClick={() =>
             handleClick({ append: "musa.shoeb", website: "Instagram" })
           }
         >
-          Instagram
+           <img src = {'./InstaLogo.jpg'} alt = "Logo" className = "InstaButtonImage"/>
         </button>
         <button
-          type="button"
+          type="button" className="LinkedInButton"
           onClick={() =>
             handleClick({ append: "musa.shoeb", website: "LinkedIn" })
           }
         >
-          LinkedIn
+          <img src = {'./LinkedLogo.jpg'} alt = "Logo" className = "LinkedInButtonImage"/>
         </button>
       </div>
-      <iframe
-        src="/MusaWebsite.JPG"
-        title="MuizMusa"
-        width="800px"
-        height="800px"
-      />
     </div>
   );
 }
